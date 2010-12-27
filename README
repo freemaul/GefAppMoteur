@@ -1,0 +1,13 @@
+Name :		AppMoteur
+Author :	FEGE Guillaume
+License :	LGPL
+Date :		2011
+
+Compilation :
+	$make
+
+Installation :
+	$make install
+
+For Windows :
+	Not yet
