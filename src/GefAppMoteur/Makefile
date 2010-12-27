@@ -1,12 +1,12 @@
 #
-#    This file is part of AppMoteur.
+#    This file is part of GefAppMoteur.
 #
-#    AppMoteur is free software: you can redistribute it and/or modify
+#    GefAppMoteur is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Lesser General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or
 #    (at your option) any later version.
 #
-#    AppMoteur is distributed in the hope that it will be useful,
+#    GefAppMoteur is distributed in the hope that it will be useful,
 #    but WITHOUT ANY WARRANTY; without even the implied warranty of
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #    GNU Lesser General Public License for more details.
@@ -19,9 +19,9 @@ SRC= $(wildcard *.cpp)
 OBJ= $(SRC:.cpp=.o)
 
 
-all:libAppMoteur.a
+all:libGefAppMoteur.a
 
-libAppMoteur.a: $(OBJ)
+libGefAppMoteur.a: $(OBJ)
 	ar r $@ $(OBJ)
 	mkdir -p ../../lib
 	cp $@ ../../lib/
@@ -30,5 +30,5 @@ libAppMoteur.a: $(OBJ)
 	$(CC) -c $^ -o $@ $(INCLUDES)
 
 clean:
-	rm -f $(OBJ) libAppMoteur.a
+	rm -f $(OBJ) libGefAppMoteur.a
 

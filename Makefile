@@ -18,16 +18,16 @@
 export INCLUDES=-I $(PWD)/include
 export CC=g++
 
-all:AppMoteur
+all:GefAppMoteur
 
 
-AppMoteur:
-	( cd src/AppMoteur && $(MAKE) )
+GefAppMoteur:
+	( cd src/GefAppMoteur && $(MAKE) )
 
 clean:
-	( cd src/AppMoteur && $(MAKE) clean)
+	( cd src/GefAppMoteur && $(MAKE) clean)
 
-install:AppMoteur
+install:GefAppMoteur
 
 
 uninstall:
